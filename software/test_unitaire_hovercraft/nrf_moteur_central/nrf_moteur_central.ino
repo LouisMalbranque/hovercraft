@@ -1,12 +1,14 @@
 /**
  * Exemple de code pour la bibliothèque Mirf – Serveur Ping Pong
- * https://www.carnetdumaker.net/articles/communiquer-sans-fil-avec-un-module-nrf24l01-la-bibliotheque-mirf-et-une-carte-arduino-genuino/
  */
 #include <SPI.h>      // Pour la communication via le port SPI
 #include <Mirf.h>     // Pour la gestion de la communication
 #include <nRF24L01.h> // Pour les définitions des registres du nRF24L01
 #include <MirfHardwareSpiDriver.h> // Pour la communication SPI
+#include <Servo.h>
+#define pinMoteur1 5
 
+Servo moteur1;
 void setup() {
   Serial.begin(9600);
 
@@ -22,15 +24,30 @@ void setup() {
   Mirf.setTADDR((byte *) "nrf01"); // Adresse de transmission
   Mirf.setRADDR((byte *) "nrf02"); // Adresse de réception
 
-  Serial.println("Go !");
+  Serial.println("Go !"); 
+
+  moteur1.attach(pinMoteur1); 
+  
+  moteur1.write(0);
+  delay(1000);
+  moteur1.write(180);
+  delay(1000);
+  moteur1.write(0);
+  delay(500); 
 }
 
 void loop() {
   byte message[sizeof(long)];
 
-  if(!Mirf.isSending() && Mirf.dataReady()){
-    Serial.println("Ping !");
+  if(Mirf.dataReady()){
     Mirf.getData(message); // Réception du paquet
-    Mirf.send(message); // Et on le renvoie tel quel
+  }
+  Serial.print(message[0], HEX);
+  //Serial.println(sizeof(message[0]));
+  if (message[0] == 1) {
+    moteur1.write(80);
+  }
+  else{
+    moteur1.write(0);
   }
 }
