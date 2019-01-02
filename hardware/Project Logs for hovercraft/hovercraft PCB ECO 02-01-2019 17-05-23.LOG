@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=GND Pin=3.3V-2
+Removed Pin From Net: NetName=VCC Pin=3.3V-3
+Removed Pin From Net: NetName=GND Pin=7V-2
+Removed Pin From Net: NetName=VCC Pin=7V-3
+Removed Pin From Net: NetName=GND Pin=batterie-2
+Removed Pin From Net: NetName=GND Pin=M1-2
+Removed Pin From Net: NetName=GND Pin=M2-2
+Removed Member From Class: ClassName=hovercraft Member=3.3V
+Removed Member From Class: ClassName=hovercraft Member=7V
+Added Component: Designator=Reg1(LM2596)
+Added Component: Designator=U?(TO220H)
+Added Pin To Net: NetName=VCC Pin=Reg1-2
+Added Pin To Net: NetName=GND Pin=Reg1-3
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=7V Pin=Arduino Nano-16
+Added Pin To Net: NetName=7V Pin=Reg1-4
+Added Pin To Net: NetName=7V Pin=U?-1
+Added Net: Name=7V
+Added Pin To Net: NetName=GND BATTERIE Pin=batterie-2
+Added Pin To Net: NetName=GND BATTERIE Pin=M1-2
+Added Pin To Net: NetName=GND BATTERIE Pin=M2-2
+Added Pin To Net: NetName=GND BATTERIE Pin=Reg1-1
+Added Net: Name=GND BATTERIE
+Added Pin To Net: NetName=NetNRF24_2 Pin=NRF24-2
+Added Pin To Net: NetName=NetNRF24_2 Pin=U?-3
+Added Net: Name=NetNRF24_2
+Added Member To Class: ClassName=hovercraft Member=Component Reg1 12V - 7V
+Added Member To Class: ClassName=hovercraft Member=Component U? 78xx
+Added Room: Name=hovercraft

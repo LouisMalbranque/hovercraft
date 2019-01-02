@@ -1,0 +1,30 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [hovercraft.PrjPcb]
+   Generated File[hovercraft.GTL]
+   Generated File[hovercraft.GBL]
+   Generated File[hovercraft.GPB]
+   Generated File[hovercraft.GPT]
+   Generated File[hovercraft.GTO]
+   Generated File[hovercraft.GTP]
+   Generated File[hovercraft.GTS]
+   Generated File[hovercraft.GBS]
+   Generated File[hovercraft.GBP]
+   Generated File[hovercraft.GBO]
+   Generated File[hovercraft.GKO]
+   Generated File[hovercraft.GM1]
+   Generated File[hovercraft.GM2]
+   Generated File[hovercraft.GM13]
+   Generated File[hovercraft.GM15]
+   Generated File[hovercraft.1]
+   Generated File[hovercraft.GML]
+   Generated File[hovercraft.GD1]
+   Generated File[hovercraft.GG1]
+   Generated File[hovercraft.EXTREP]
+   Generated File[hovercraft.REP]
+
+
+Files Generated   : 21
+Documents Printed : 0
+
+Finished Output Generation At 17:51:47 On 02/01/2019

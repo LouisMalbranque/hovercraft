@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=VCC Pin=interr-1
+Removed Pin From Net: NetName=GND BATTERIE Pin=Reg1-1
+Removed Pin From Net: NetName=VCC Pin=Reg1-2
+Removed Pin From Net: NetName=GND Pin=Reg1-3
+Removed Member From Class: ClassName=hovercraft Member=Reg1
+Added Component: Designator=U?(DIP-4)
+Added Pin To Net: NetName=VCC Pin=Arduino Nano-16
+Added Pin To Net: NetName=VCC Pin=U?-1
+Added Pin To Net: NetName=GND BATTERIE Pin=U?-2
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=VCC Pin=U?-4
+Added Pin To Net: NetName=VCC BATTERIE Pin=interr-1
+Added Pin To Net: NetName=VCC BATTERIE Pin=U?-1
+Added Net: Name=VCC BATTERIE

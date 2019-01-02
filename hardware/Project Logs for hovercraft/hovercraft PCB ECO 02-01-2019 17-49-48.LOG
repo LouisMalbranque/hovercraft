@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=R? Old Footprint=0201 New Footprint=0805
+Change Component Designator: OldDesignator=opto NewDesignator=U?
+Change Component Designator: OldDesignator=R? NewDesignator=R4
+Change Component Designator: OldDesignator=reg 3.3 NewDesignator=U?
+Added Room: Name=hovercraft

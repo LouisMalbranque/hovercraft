@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=VCC Pin=M1-1
+Removed Pin From Net: NetName=VCC Pin=M2-1
+Added Pin To Net: NetName=VCC BATTERIE Pin=M1-1
+Added Pin To Net: NetName=VCC BATTERIE Pin=M2-1
+Added Room: Name=hovercraft
